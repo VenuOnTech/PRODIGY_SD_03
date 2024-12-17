@@ -46,7 +46,6 @@ class Contact {
         this.address = address;
     }
 
-    @Override
     public String toString() {
         return "Name: " + name + "\nPhone: " + phone + "\nEmail: " + email + "\nAddress: " + address;
     }
@@ -73,7 +72,7 @@ public class ContactManagementSystem {
             System.out.println("7. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
-            sc.nextLine(); // Consume newline
+            sc.nextLine();
 
             switch (choice) {
                 case 1 -> addContact(sc);
